@@ -61,10 +61,10 @@ void DIO_TogglePinValue(u8 u8PortIdCopy,u8 u8PinIdCopy){
 void DIO_SetPortDirection(u8 u8PortIdCopy, u8 u8PortDirCopy){
     if(u8PortDirCopy){
         switch(u8PortIdCopy){
-            case 1: DDRA = 225; break;
-            case 2: DDRB = 225; break;
-            case 3: DDRC = 225; break;
-            case 4: DDRD = 225; break;
+            case 1: DDRA = 255; break;
+            case 2: DDRB = 255; break;
+            case 3: DDRC = 255; break;
+            case 4: DDRD = 255; break;
         }
     }
     else{
