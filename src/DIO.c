@@ -89,16 +89,16 @@ void DIO_SetPortValue(u8 u8PortIdCopy,u8 u8PortValCopy){
 void DIO_TogglePortValue(u8 u8PortIdCopy){
     switch(u8PortIdCopy){
         case 1:
-        PORTA == 0 ? (PORTA = 1) : (PORTA = 0);
+        PORTA = ~PORTA;
         break;
         case 2:
-        PORTB == 0 ? (PORTB = 1) : (PORTB = 0);
+        PORTB = ~PORTB;
         break;
         case 3:
-        PORTC == 0 ? (PORTC = 1) : (PORTC = 0);
+        PORTC = ~PORTC;
         break;
         case 4:
-        PORTD == 0 ? (PORTD = 1) : (PORTD = 0);
+        PORTD = ~PORTD;
         break;
     }
 }
