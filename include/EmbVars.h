@@ -12,6 +12,14 @@ typedef signed int s32;
 typedef float f32;
 typedef double f64;
 
+//for port/pin direction
+#define OUTPUT 1
+#define INPUT 0
+
+//for port/pin values
+#define HIGH 1
+#define LOW 0
+
 // A
 #define DDRA *(volatile u8*) 0x3A
 #define PORTA *(volatile u8*) 0x3B
