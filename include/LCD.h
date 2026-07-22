@@ -15,5 +15,6 @@ void LCD_SendCommand(LCD_Config *lcd , u8 command);
 void LCD_Init(LCD_Config *lcd);
 void LCD_Char(LCD_Config *lcd, u8 letter);
 void LCD_String(LCD_Config *lcd, const u8* letters);
+void LCD_Clear(LCD_Config *lcd);
 
 #endif
