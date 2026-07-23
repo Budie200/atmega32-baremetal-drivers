@@ -47,7 +47,7 @@ void LCD_Char(LCD_Config *lcd, u8 letter){
 }
 
 void LCD_String(LCD_Config *lcd, const u8* letters){
-	for(int i = 0; letters[i] != '\0'; i++){
+	for(u8 i = 0; letters[i] != '\0'; i++){
 		LCD_Char(lcd, letters[i]);
 	}
 }
