@@ -40,7 +40,7 @@ u8 KPD_GetPressedKey(){
         
         for(u8 col = 0; col < 4; col++){
             
-            // If the row reads LOW, a button is pressed
+            // If the col reads LOW, a button is pressed
             if(DIO_GetPinValue(KPD_Port, col) == LOW){
                 
                 pressed_key = KPD_Map[row - 4][col];
