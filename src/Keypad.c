@@ -1,8 +1,8 @@
-#include <util/delay.h>
 #include "EmbVars.h"
 #include "bitwise_ops.h"
 #include "DIO.h"
 #include "Keypad.h"
+#include <Delay.h>
 
 static const u8 KPD_Map[4][4] = {
     {'7', '8', '9', '/'},
@@ -47,7 +47,7 @@ u8 KPD_GetPressedKey(){
                 
                 while(DIO_GetPinValue(KPD_Port, col) == LOW);
                 
-                _delay_ms(10); 
+                Delay_ms(10);
             }
         }
         
